@@ -1,0 +1,82 @@
+/*////////////home empresa///////////////////*/
+
+#aler-homeEmpleo{
+    background-color: #3a3b69;
+    margin: 0;
+    
+}
+
+#btn-registro-phome{
+    background-color: #006634;
+}
+
+
+.ul-homeEmpleo{
+     display: flex;
+}
+
+.li-menu-homeEmpleo{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+    width: 200px;
+    height: 100px;
+}
+
+.img-ul-homeEmpleo{
+    width: 30%;
+    background-size: contain;
+}
+
+#btn-menuEmpleo {
+    width: 140px;
+    background-color: #006634;
+}
+
+#btn-menuEmpleo:hover {
+   
+    background-color: #3a3b69;
+}
+
+#btn-menuEmpleo img{
+    width: 50px;
+    height: 50px;
+}
+
+/* ==================================================
+  Call-to-action Styling
+  ================================================== */
+.cta {
+  background-color: #006634;
+  padding: 25px 0;
+}
+
+.cta h2 {
+  margin-bottom: 5px;
+}
+
+.cta h2,
+.cta p {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.cta p {
+  margin-bottom: 0;
+  opacity: .75;
+}
+
+.cta .btn-ghost {
+  position: relative;
+  top: 13px;
+}
+
+.btn-ghost {
+  border: 3px solid #fff;
+  background-color: transparent;
+}
+
+.btn-ghost:hover {
+  background-color: #fff;
+  color: #199EB8;
+}
