@@ -7721,6 +7721,8 @@ button.close {
 .ul-homeEmpleo {
   display: -webkit-box;
   display: flex;
+  align-content: center;
+  justify-content: space-around;
 }
 
 .li-menu-homeEmpleo {
@@ -7731,7 +7733,8 @@ button.close {
   flex-direction: column;
   -webkit-box-align: center;
   align-items: center;
-  width: 200px;
+  width: 180px;
+  flex-wrap: wrap;
   height: 100px;
 }
 
@@ -7741,7 +7744,7 @@ button.close {
 }
 
 #btn-menuEmpleo {
-  width: 140px;
+  width: 115px;
   background-color: #006634;
 }
 
@@ -7750,8 +7753,12 @@ button.close {
 }
 
 #btn-menuEmpleo img {
-  width: 50px;
-  height: 50px;
+  width: 32px;
+  height: 32px;
+}
+
+#seña {
+  color: #fff;
 }
 
 /* ==================================================
@@ -7760,6 +7767,7 @@ button.close {
 .cta {
   background-color: #006634;
   padding: 25px 0;
+  box-shadow: 4px 4px 10px #999;
 }
 
 .cta h2 {
@@ -7792,13 +7800,69 @@ button.close {
   color: #199EB8;
 }
 
+.span-pempresa {
+  color: coral;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#span-pempresa-container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+
+#row-pempresa {
+  margin-right: 20px;
+}
+
+.fa {
+  color: green;
+  font-size: 45px;
+}
+
+.color-text {
+  color: #006634;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+#list-group-showOfertas {
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #006634;
+}
+
+.ul-show-oferta {
+  display: -webkit-box;
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: #006634;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.li-show-oferta {
+  display: -webkit-box;
+  display: flex;
+  color: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   max-width: 1280px;
-  min-height: 100vh;
+  height: 100vh;
   margin: 0 auto;
   background: #e2e2e2;
   background: -webkit-gradient(left top, left bottom, color-stop(0%, #e2e2e2), color-stop(36%, #dbdbdb), color-stop(51%, #d1d1d1), color-stop(100%, #fefefe));

@@ -10,15 +10,18 @@
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "pagReferiod";
 @import "homeEmpresa";
+
+
 *{
     box-sizing: border-box;
+    
 }
 
 
 body{
    
    max-width: 1280px;
-   min-height: 100vh;
+   height: 100vh;
    margin: 0 auto;
   background: rgba(226,226,226,1);
 background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 36%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);

@@ -1,7 +1,7 @@
 <?php
 
 namespace App;
-
+use App\Empresa;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -25,4 +25,9 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+    
+    public function empresas()
+    {
+        return $this->hasMany(Empresa::class);
+    }
 }

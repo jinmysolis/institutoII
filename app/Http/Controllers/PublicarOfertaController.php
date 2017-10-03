@@ -84,8 +84,12 @@ class PublicarOfertaController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($id)
-    {
-        //
+    {    $pempresa = Pempresa::find($id);
+    
+    
+        return view('publicarEmpleos.show',[
+          'pempresa'=>$pempresa,
+      ]);
     }
 
     /**

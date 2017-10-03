@@ -6,8 +6,9 @@
 
    
 <h1>aqui van las ofertas de las compañias que necesitan empleados</h1>
-
-<div class="row text-center">
+<div class="home-container">
+  
+    <div class="row text-center" id="row-pempresa">
     
     @forelse($pempresa as $pempresa)
       <div class="col-6">
@@ -15,45 +16,30 @@
 
         
            
-        <section class="cta">
+    <section class="cta img-thumbnail">
       <div class="container">
         <div class="row">
           <div class="col-lg-9 col-sm-12 text-lg-left text-center">
             <h2>
-               <span>Se solicita: </span>  {{$pempresa->titulo_oferta}}
+               <span class="span-pempresa">Se solicita: </span>  {{$pempresa->titulo_oferta}}
             </h2>
 
-            <p>
-                <span>Funciones: </span>{{$pempresa->tareas}}<br>
-                <span>Empresa: </span>{{$pempresa->user->name}}<br>
-                <span>Fecha: </span>{{$pempresa->created_at}}
+              <p id="span-pempresa-container">
+                <span class="span-pempresa">Funciones: </span>{{$pempresa->tareas}}<br>
+                <span class="span-pempresa">Resposable: </span>{{$pempresa->user->name}}<br>
+                <span class="span-pempresa">Fecha: </span>{{$pempresa->created_at}}
             </p>
           </div>
 
           <div class="col-lg-3 col-sm-12 text-lg-right text-center">
-            <a class="btn btn-ghost" href="#">Mas informacion</a>
+            <a class="btn btn-ghost" href="{{ url('/publicarOferta',$pempresa->id) }}">Mas informacion</a>
           </div>
         </div>
       </div>
     </section>
         
         
-<!--           area: {{$pempresa->area}}<br><br>
-           jornada: {{$pempresa->tipo_jornada}}<br>
-           contrato: {{$pempresa->tipo_contrato}}<br>
-           tareas:{{$pempresa->tareas}}<br>
-           salario: {{$pempresa->salario}}<br>
-            pais :{{$pempresa->pais2}}<br>
-            ciudad:{{$pempresa->ciudad2}}<br>
-            estado:{{$pempresa->estado2}}<br>
-            experiencia:{{$pempresa->anos_experiencia}}<br>
-           edad minima: {{$pempresa->edad_minima}}<br>
-            edad:maxima{{$pempresa->edad_maxima}}<br>
-            estudios:{{$pempresa->estudios_minimos}}<br>
-           idioma: {{$pempresa->idiomas}}<br>
-           nivel: {{$pempresa->idioma_nivel}}<br>
-           viajar: {{$pempresa->viajar}}<br>
-            licencia:{{$pempresa->licencia}}<br>-->
+
         <hr>
             
         
@@ -65,5 +51,6 @@
     
     
 </div>
-
+    @include('includes.banner')    
+</div>
 @endsection

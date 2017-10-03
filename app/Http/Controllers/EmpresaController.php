@@ -74,7 +74,7 @@ class EmpresaController extends Controller
             }
             
             
-          return view("empresas.home");
+          return view("publicarEmpleos.createOferta");
         }else{
             return view("empresas.create");
         }
@@ -88,7 +88,12 @@ class EmpresaController extends Controller
      */
     public function show($id)
     {
-        //
+        $user = User::where('id',$id)->first();
+    
+    
+        return view('empresas.show',[
+          'user'=>$user,
+      ]);
     }
 
     /**

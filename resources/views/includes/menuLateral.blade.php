@@ -3,6 +3,8 @@
           <div class="gente">
          <img src="img/profesional.jpg" alt="">
          </div>
+       <li @if(request()->is('panel'))class="active" @endif><a class="btn btn-lg btn-success text-left" href="{{ url('/homeEmpresa2') }}">
+               Empleos<i id="seña"class="fa fa-sign-language fa-fw fa-3x" aria-hidden="true"></i></a></li>
        <li @if(request()->is('panel'))class="active" @endif><a class="btn btn-lg btn-success text-left" href="{{ url('/panel') }}">
       Panel<img src="{{ asset('img/menu-lateral27.png') }}" alt="" ></a></li>
       <li><a class="btn btn-lg btn-success text-left" href="#">

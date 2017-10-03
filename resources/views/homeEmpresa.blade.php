@@ -16,10 +16,7 @@
         
         
       <div class="central">
-       <div class="alert alert-success" role="alert">
-             Bienvemidos a la section empresa
-      </div>   
-     
+<!--       @include('includes.menuEmpresaEmpleos') -->
    
       </div>
       

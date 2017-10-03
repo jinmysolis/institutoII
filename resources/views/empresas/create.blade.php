@@ -123,29 +123,28 @@
 
                                  <select class="form-control" name="sector_empresarial" value="{{ old('sector_empresarial') }}" required autofocus>
                                     <option selected="selected" value="0">Selecciona el sector</option>
-                                    <option value="2">Agricultura / Pesca / Ganadería</option>
-                                    <option value="5">Construcción / obras</option>
-                                    <option value="7">Educación</option>
-                                    <option value="8">Energía</option>
-                                    <option value="9">Entretenimiento / Deportes</option>
-                                    <option value="15">Fabricación</option>
-                                    <option value="10">Finanzas / Banca</option>
-                                    <option value="16">Gobierno / No Lucro</option>
-                                    <option value="12">Hostelería / Turismo</option>
-                                    <option value="3">Informática / Hardware</option>
-                                    <option value="4">Informática / Software</option>
-                                    <option value="13">Internet</option>
-                                    <option value="23">Legal / Asesoría</option>
-                                    <option value="18">Materias Primas</option>
-                                    <option value="14">Medios de Comunicación</option>
-                                    <option value="1">Publicidad / RRPP</option>
-                                    <option value="19">RRHH / Personal</option>
-                                    <option value="11">Salud / Medicina</option>
-                                    <option value="17">Servicios Profesionales</option>
-                                    <option value="21">Telecomunicaciones</option>
-                                    <option value="22">Transporte</option>
-                                    <option value="6">Venta al consumidor</option>
-                                    <option value="20">Venta al por mayor</option>
+                                    <option value="Agricultura / Pesca / Ganadería">Agricultura / Pesca / Ganadería</option>
+                                    <option value="Construcción / obras">Construcción / obras</option>
+                                    <option value="Educación">Educación</option>
+                                    <option value="Energía">Energía</option>
+                                    <option value="Entretenimiento / Deportes">Entretenimiento / Deportes</option>
+                                    <option value="Fabricación">Fabricación</option>
+                                    <option value="Finanzas / Banca">Finanzas / Banca</option>
+                                    <option value="Gobierno / No Lucro">Gobierno / No Lucro</option>
+                                    <option value="Hostelería / Turismo">Hostelería / Turismo</option>
+                                    <option value="Informática / Hardware">Informática / Hardware</option>
+                                    <option value="Internet">Internet</option>
+                                    <option value="Legal / Asesoría">Legal / Asesoría</option>
+                                    <option value="Materias Primas">Materias Primas</option>
+                                    <option value="Medios de Comunicación">Medios de Comunicación</option>
+                                    <option value="Publicidad / RRPP">Publicidad / RRPP</option>
+                                    <option value="RRHH / Personal">RRHH / Personal</option>
+                                    <option value="Salud / Medicina">Salud / Medicina</option>
+                                    <option value="Servicios Profesionales">Servicios Profesionales</option>
+                                    <option value="Telecomunicaciones">Telecomunicaciones</option>
+                                    <option value="Transporte">Transporte</option>
+                                    <option value="Venta al consumidor">Venta al consumidor</option>
+                                    <option value="Venta al por mayor">Venta al por mayor</option>
 
 
                                   </select>
@@ -229,26 +228,26 @@
 <!--                                <input id="pais2" type="text" class="form-control" name="pais2" value="{{ old('pais2') }}" required autofocus>-->
                                  <select class="form-control" name="pais2" value="{{ old('pais2') }}" required autofocus>
                                     <option value="0">Selecciona un país</option>
-                                    <option value="10">Argentina</option>
-                                    <option value="21">Bolivia</option>
-                                    <option value="43">Chile</option>
-                                    <option value="48">Colombia</option>
-                                    <option value="54">Costa Rica</option>
-                                    <option value="56">Cuba</option>
-                                    <option value="63">Ecuador</option>
-                                    <option value="64">El Salvador</option>
-                                    <option value="209">España</option>
-                                    <option value="93">Guatemala</option>
-                                    <option value="99">Honduras</option>
-                                    <option value="139">México</option>
-                                    <option value="159">Nicaragua</option>
-                                    <option value="171">Panamá</option>
-                                    <option value="173">Paraguay</option>
-                                    <option value="174">Perú</option>
-                                    <option value="181">Puerto Rico</option>
-                                    <option value="62">República Dominicana</option>
-                                    <option value="243">Uruguay</option>
-                                    <option selected="selected" value="245">Venezuela</option>
+                                    <option value="Argentina">Argentina</option>
+                                    <option value="Bolivia">Bolivia</option>
+                                    <option value="Chile">Chile</option>
+                                    <option value="Colombia">Colombia</option>
+                                    <option value="Costa Rica">Costa Rica</option>
+                                    <option value="Cuba">Cuba</option>
+                                    <option value="Ecuador">Ecuador</option>
+                                    <option value="El Salvador">El Salvador</option>
+                                    <option value="España">España</option>
+                                    <option value="Guatemala">Guatemala</option>
+                                    <option value="Honduras">Honduras</option>
+                                    <option value="México">México</option>
+                                    <option value="Nicaragua">Nicaragua</option>
+                                    <option value="Panamá">Panamá</option>
+                                    <option value="Paraguay">Paraguay</option>
+                                    <option value="Perú">Perú</option>
+                                    <option value="Puerto Rico">Puerto Rico</option>
+                                    <option value="República Dominicana">República Dominicana</option>
+                                    <option value="Uruguay">Uruguay</option>
+                                    <option selected="Venezuela" value="245">Venezuela</option>
 
                                   </select>
 
@@ -385,7 +384,7 @@
    </div>   
       
       
-       @include('includes.Banner')
+       @include('includes.banner')
       
       
       

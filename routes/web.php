@@ -19,6 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 Route::get('/homeEmpresa', 'HomeController@empresa');
+Route::get('/homeEmpresa2', 'HomeController@empresa2');
 Route::resource('publicarOferta', 'PublicarOfertaController');
 Route::resource('empleos', 'EmpleosController');
 Route::resource('referidos', 'ReferidosController');

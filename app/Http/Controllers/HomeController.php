@@ -30,4 +30,9 @@ class HomeController extends Controller
     {
         return view('homeEmpresa');
     }
+    
+    public function empresa2()
+    {
+        return view('homeEmpresa2');
+    }
 }
