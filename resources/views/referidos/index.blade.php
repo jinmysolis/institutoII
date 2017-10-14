@@ -17,7 +17,7 @@
         
       <div class="central">
           <div class="alert alert-success " role="alert">
-             Bienvenidos a la seccion referidos
+             Bienvenidos a la sección referidos
           </div> 
           
               
@@ -42,7 +42,7 @@
 
     <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
       <div class="card-body text-justify">
-       El primer paso para ganar comisiones es la creación de una cuenta y unirse al programa de afiliados; entrar a la oficina virtual y configurar la cuenta  que sólo lleva unos minutos.Después de registrarse en el programa de afiliados, obtendrá un enlace único en referencia a nuevos usuarios. Comparte el enlace en los diferentes contactos o medios sociales, y por cada producto comprado a través de su enlace, usted ganará comisiones de hasta el 20%.
+       El primer paso para ganar comisiones es la creación de una cuenta y unirse al programa de afiliados; entrar a la oficina virtual y configurar la cuenta  que sólo lleva unos minutos. Después de registrarse en el programa de afiliados, obtendrá un enlace único en referencia a nuevos usuarios. Comparte el enlace en los diferentes contactos o medios sociales, y por cada producto comprado a través de su enlace, usted ganará comisiones de hasta el 20%.
       </div>
     </div>
   </div>

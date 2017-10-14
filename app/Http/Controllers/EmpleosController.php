@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\EmpleoCreateRequest;
 use Illuminate\Http\Request;
 use App\Empleo;
+use App\User;
 class EmpleosController extends Controller
 {
     /**
@@ -46,35 +47,37 @@ class EmpleosController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(EmpleoCreateRequest $request)
+    public function store(Request $request)
     {
+        $user= $request->user();
+          
         $empleo = new Empleo;
-        
-        $empleo->primer_nombre = $request->primer_nombre;
-        $empleo->segundo_nombre = $request->segundo_nombre;
-        $empleo->apellidos = $request->apellidos;
-        $empleo->email = $request->email;
-        $empleo->cargo_que_busca = $request->cargo_que_busca;
-        $empleo->salario_minimo = $request->salario_minimo;
-        $empleo->fecha_nacimiento = $request->fecha_nacimiento;
-        $empleo->prefijo_cedula = $request->prefijo_cedula;
-        $empleo->cedula_pasaporte = $request->cedula_pasaporte;
-        $empleo->rif_nit_iss = $request->rif_nit_iss;
-        $empleo->telefono_residencia = $request->telefono_residencia;
-        $empleo->prefijo_movil = $request->prefijo_movil;
-        $empleo->telefono_movil = $request->telefono_movil;
-        $empleo->prefijo_oficina = $request->prefijo_oficina;
-        $empleo->telefono_oficina = $request->telefono_oficina;       
-        $empleo->pais = $request->pais;
-        $empleo->estado = $request->estado;
-        $empleo->ciudad = $request->ciudad;
-        $empleo->estado_civil = $request->estado_civil;
-        $empleo->genero = $request->genero;
+        $empleo->user_id = $user->id;
         $empleo->profesion = $request->profesion;
+        $empleo->segundo_nombre = $request->segundo_nombre;
+        $empleo->zona_horaria = $request->zona_horaria;
+        $empleo->idiomas = $request->idiomas;
+        $empleo->nacionalidad = $request->nacionalidad;
+        $empleo->estado_civil = $request->estado_civil;
+        $empleo->tipo_documento = $request->tipo_documento;
+        $empleo->cedula_ciudadania = $request->cedula_ciudadania;
+        $empleo->licencia_conducir = $request->licencia_conducir;
+        $empleo->fecha_nacimiento = $request->fecha_nacimiento;
+        $empleo->lugar_nacimiento= $request->lugar_nacimiento;
+        $empleo->pais_residencia = $request->pais_residencia;
+        $empleo->ciudad = $request->ciudad;
+        $empleo->biografia = $request->biografia;
+        $empleo->codigo_telefono = $request->codigo_telefono;
+        $empleo->telefono = $request->telefono;
+        $empleo->salario_minimo = $request->salario_minimo;
+        $empleo->rif_nit_iss = $request->rif_nit_iss;
+        $empleo->genero = $request->genero;       
+       
        
        
         if($empleo->save()){
-          return redirect("/empleos");
+        
+          return view("empleos.createFormacion");
         }else{
             return view("empleos.create");
         }
@@ -88,7 +91,27 @@ class EmpleosController extends Controller
      */
     public function show($id)
     {
-        //
+        $user = Empleo::where('id',$id)->first();
+    
+//        dd($user);
+        
+        
+        if($user == null)
+      {
+        return "no tiene empleo";
+      }
+
+        return "si tiene empleo";
+        
+        
+        
+        
+        return view('empleos.empleosshow',[
+          'user'=>$user,
+      ]);
+        
+        
+     
     }
 
     /**

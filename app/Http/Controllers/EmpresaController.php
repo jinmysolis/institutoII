@@ -94,8 +94,27 @@ class EmpresaController extends Controller
         return view('empresas.show',[
           'user'=>$user,
       ]);
+        
+        
+        
     }
 
+    
+    
+    public function showEmpleos($id)
+    {
+       
+        
+        $user = User::where('id',$id)->first();
+    
+    
+        return view('empresas.showOferta',[
+          'user'=>$user,
+      ]);
+    }
+    
+    
+    
     /**
      * Show the form for editing the specified resource.
      *

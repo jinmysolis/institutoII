@@ -12,12 +12,12 @@
        
         
   
-   @include('includes.menuLateral')  
+   @include('includes.menuLateralPersona')  
      
         
       <div class="central">
           <div class="alert alert-success" role="alert">
-             Bienvenidos a la section personal
+             Bienvenidos a la section personal hola bb
           </div> 
    
      </div>

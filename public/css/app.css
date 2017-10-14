@@ -7768,6 +7768,7 @@ button.close {
   background-color: #006634;
   padding: 25px 0;
   box-shadow: 4px 4px 10px #999;
+  width: 500px;
 }
 
 .cta h2 {
@@ -7786,7 +7787,6 @@ button.close {
 }
 
 .cta .btn-ghost {
-  position: relative;
   top: 13px;
 }
 
@@ -7812,10 +7812,6 @@ button.close {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
-}
-
-#row-pempresa {
-  margin-right: 20px;
 }
 
 .fa {
@@ -7854,6 +7850,174 @@ button.close {
   flex-direction: column;
   -webkit-box-align: center;
   align-items: center;
+}
+
+/*////////////empleos///////////////////*/
+#radio-estado-civil {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+#documento-cd {
+  width: 200px;
+}
+
+#licencia {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.input-cerficados {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+/*////////////welcome///////////////////*/
+/*///////////pagina wolcomer///////////*/
+.menu-icono-welcome {
+  padding-top: 40px;
+  max-width: 1280px;
+  overflow: hidden;
+}
+
+.menu-icono-welcome ul {
+  display: -webkit-box;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.menu-icono-welcome ul li {
+  border-right: 1px solid #382162;
+  margin-right: 19px;
+  padding-right: 3px;
+}
+
+.menu-icono-welcome h2 {
+  font-size: 16px;
+  color: #382162;
+}
+
+.menu-icono-welcome img {
+  width: 60px;
+  height: 50px;
+}
+
+/*////////welcme parte1//////////*/
+.welcome-parte-1 {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: flex;
+  max-width: 1280px;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.mensaje2 {
+  width: 420px;
+  height: 420px;
+  background-color: #006236;
+  border: 1px solid #000;
+  box-shadow: 8px 8px 10px #999;
+  margin-right: 15px;
+}
+
+.video-logo video {
+  width: 420px;
+  height: 420px;
+  border: 1px solid black;
+}
+
+#videos {
+  margin-top: 40px;
+}
+
+.modal-header .modal-title {
+  color: #006634;
+}
+
+.modal-content .modal-body p {
+  color: #006634;
+}
+
+.panel-body {
+  color: #006634;
+}
+
+.panel-heading .panel-title {
+  color: #006634;
+}
+
+#division {
+  width: 95%;
+  height: 35px;
+  background-color: #362853;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+}
+
+.v-text {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 5px;
+  margin-left: 28px;
+  margin-right: 28px;
+}
+
+.v video {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  background-size: cover;
+  border: 1px solid black;
+}
+
+.mensaje {
+  width: 500px;
+  height: 500px;
+  background-color: #006236;
+  border: 1px solid #000;
+  box-shadow: 8px 8px 10px #999;
+}
+
+.alert-success {
+  background-color: #006236;
+  color: #fff;
+  margin-top: 30px;
+  border-color: #006236;
+  overflow: hidden;
+}
+
+.alert-success ul {
+  list-style: none;
+  padding-top: 20px;
+}
+
+.alert-success .btn-outline-success {
+  color: black;
+  margin-top: 40px;
 }
 
 * {
@@ -8134,160 +8298,6 @@ footer {
     -webkit-box-direction: normal;
     flex-direction: column;
   }
-}
-
-/*///////////pagina wolcomer///////////*/
-.menu-icono-welcome {
-  padding-top: 40px;
-  max-width: 1280px;
-  overflow: hidden;
-}
-
-.menu-icono-welcome ul {
-  display: -webkit-box;
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.menu-icono-welcome ul li {
-  border-right: 1px solid #382162;
-  margin-right: 19px;
-  padding-right: 3px;
-}
-
-.menu-icono-welcome h2 {
-  font-size: 16px;
-  color: #382162;
-}
-
-.menu-icono-welcome img {
-  width: 60px;
-  height: 50px;
-}
-
-/*////////welcme parte1//////////*/
-.welcome-parte-1 {
-  margin-top: 60px;
-  display: -webkit-box;
-  display: flex;
-  max-width: 1280px;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  -webkit-box-align: center;
-  align-items: center;
-}
-
-.welcome-parte-1 .btn {
-  background-color: #006236;
-  width: 160px;
-}
-
-.welcome-parte-1 h1 {
-  color: #006236;
-  font-size: 50px;
-  margin: 0;
-}
-
-.welcome-parte-1 h3 {
-  margin: 0;
-  margin-bottom: 6px;
-  color: #006236;
-}
-
-.welcome-parte-1 .form-group {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  align-items: center;
-  padding-left: 70px;
-  padding-right: 70px;
-}
-
-.welcome-parte-1 .form-group label {
-  font-size: 24px;
-  margin-right: 50px;
-  color: #006236;
-}
-
-.welcome-parte-1 .form-group input {
-  width: 300px;
-  background-color: #9c9c9a;
-}
-
-.welcome-parte-1 img {
-  width: 400px;
-  height: 400px;
-  -webkit-box-align: center;
-  align-items: center;
-  border: 1px solid black;
-}
-
-#division {
-  width: 95%;
-  height: 35px;
-  background-color: #362853;
-  margin-top: 15px;
-  margin-bottom: 25px;
-  margin-left: 30px;
-}
-
-.video-logo video {
-  width: 340px;
-  height: 340px;
-  margin-right: 20px;
-  border: 1px solid black;
-}
-
-#videos {
-  margin-top: 40px;
-}
-
-.v-text {
-  display: -webkit-box;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-bottom: 5px;
-  margin-left: 28px;
-  margin-right: 28px;
-}
-
-.v video {
-  width: 500px;
-  height: 500px;
-  overflow: hidden;
-  background-size: cover;
-  border: 1px solid black;
-}
-
-.mensaje {
-  width: 500px;
-  height: 500px;
-  background-color: #006236;
-  border: 1px solid #000;
-  box-shadow: 8px 8px 10px #999;
-}
-
-.alert-success {
-  background-color: #006236;
-  color: #fff;
-  margin-top: 30px;
-  border-color: #006236;
-  overflow: hidden;
-}
-
-.alert-success ul {
-  list-style: none;
-  padding-top: 20px;
-}
-
-.alert-success .btn-outline-success {
-  color: black;
-  margin-top: 40px;
 }
 
 /* ////////////////////pag-registro////////////////// */

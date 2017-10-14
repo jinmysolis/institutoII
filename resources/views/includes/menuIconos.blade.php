@@ -1,7 +1,7 @@
 <nav id="menu-icono">
       <ul >
          
-      <li><a class="btn btn-lg btn-success text-left" href="#">
+      <li><a class="btn btn-lg btn-success text-left" href="{{ url('/usuarios',Auth::user()->id) }}">
      <img src="{{ asset('img/late-ico1.png') }}" alt="" ></a><div class="text-center"> Cuenta</div></li>
       <li><a class="btn btn-lg btn-success text-left" href="#">
      <img src="{{ asset('img/late-ico2.png') }}" alt="" ></a> <div class="text-center">Personal</div></li>

@@ -5,6 +5,8 @@
 
 <!--    @include('includes.menuIconosEmpleo') -->
     
-    <h1>mostar empleos publicados por empresas</h1>
+   <div class="alert alert-success" role="alert">
+     Aqui se mostraran  los curriculum inscriptos
+ </div>
 
 @endsection

@@ -2,6 +2,8 @@
 
 namespace App;
 use App\Empresa;
+use App\Pempresa;
+use App\Empleo;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -29,5 +31,15 @@ class User extends Authenticatable
     public function empresas()
     {
         return $this->hasMany(Empresa::class);
+    }
+    
+    public function empleos()
+    {
+        return $this->hasMany(Pempresa::class);
+    }
+    
+    public function curriculum()
+    {
+        return $this->hasMany(Empleo::class);
     }
 }

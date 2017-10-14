@@ -16,7 +16,7 @@
         
         
    <div class="central">
-      
+      @include('includes.menuEmpresaEmpleos')
       <div class="formulario_create_empleo">
           <br><br>
  
@@ -113,7 +113,7 @@
                                     </span>
                                 @endif
                             </div>
-    </div>
+         </div>
 
 
 <div class="form-group{{ $errors->has('sector_empresarial') ? ' has-error' : '' }}">
@@ -247,7 +247,7 @@
                                     <option value="Puerto Rico">Puerto Rico</option>
                                     <option value="República Dominicana">República Dominicana</option>
                                     <option value="Uruguay">Uruguay</option>
-                                    <option selected="Venezuela" value="245">Venezuela</option>
+                                    <option selected="Venezuela" value="Venezuela">Venezuela</option>
 
                                   </select>
 

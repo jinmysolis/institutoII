@@ -1,11 +1,16 @@
 @extends('layouts.myapp4')
 
 @section('content')
-
-<!--@include('includes.menuEmpresaEmpleos')  -->
-
  
-<h1>Empresas registradas</h1>
+@include('includes.menuIconos')  
+<div class="home-container">
+     @include('includes.menuLateral')  
+<div class="central">
+     @include('includes.menuEmpresaEmpleos')
+ <div class="alert alert-success" role="alert">
+        Todas las Empresas registradas
+    </div>
+<h1></h1>
 <div class="center">
     {{$user->name}}<br>
     
@@ -32,7 +37,7 @@
     <a class="list-group-item color-text" href="#"><i class="fa fa-newspaper-o fa-fw fa-3x" aria-hidden="true"></i>&nbsp;TIPO DE EMPRESA:  <div class="text-center color-text">{{$empresa->tipo_empresa}}</div> </a>
     <br>
     <hr>
-    Empresa
+    <a class="list-group-item color-text" href="#">&nbsp;EMPRESAS PUBLICADAS:  </a>
     <hr>
     
           @endforeach
@@ -43,6 +48,9 @@
   
 
  </div>
-
+</div>
+    
+  @include('includes.banner')    
+</div>
 
 @endsection
