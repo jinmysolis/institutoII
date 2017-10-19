@@ -8020,17 +8020,34 @@ button.close {
   margin-top: 40px;
 }
 
+/*/////////////carrucer pagina empleos /////////////////*/
+.card {
+  margin-top: 20px;
+  width: 200px;
+  color: #006634;
+  border: 4px double #006634;
+}
+
+.card-img-top {
+  width: 100%;
+  background-size: contain;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   max-width: 1280px;
-  height: 100vh;
+  height: 100%;
   margin: 0 auto;
   background: #e2e2e2;
   background: -webkit-gradient(left top, left bottom, color-stop(0%, #e2e2e2), color-stop(36%, #dbdbdb), color-stop(51%, #d1d1d1), color-stop(100%, #fefefe));
   background: -ms-linear-gradient(top, #e2e2e2 0%, #dbdbdb 36%, #d1d1d1 51%, #fefefe 100%);
+}
+
+.total-heid {
+  min-height: 100vh;
 }
 
 /* ////////////////////header////////////////// */

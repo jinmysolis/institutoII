@@ -4,7 +4,14 @@
 @include('includes.menuIconos')  
 <!--@include('includes.menuEmpresaEmpleos')  -->
 <div class="home-container">
-  @include('includes.menuLateral')  
+ @if (auth()->user()->tipoCuenta === 'personal') 
+           @include('includes.menuLateralPersona')  
+      @else
+        
+      @include('includes.menuLateral')  
+        
+        
+    @endif 
   <div class="central">   
         <div class="alert alert-success " role="alert">
                     Detalles del usuario

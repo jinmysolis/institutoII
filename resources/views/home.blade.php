@@ -10,14 +10,19 @@
         
  <div class="home-container">
        
+   @if (auth()->user()->tipoCuenta === 'personal') 
+           @include('includes.menuLateralPersona')  
+      @else
         
-  
-   @include('includes.menuLateralPersona')  
+      @include('includes.menuLateral')  
+        
+        
+    @endif
      
         
       <div class="central">
           <div class="alert alert-success" role="alert">
-             Bienvenidos a la section personal hola bb
+             Bienvenidos a la section personal 
           </div> 
    
      </div>

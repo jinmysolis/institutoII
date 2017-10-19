@@ -30,6 +30,14 @@ class EmpleosController extends Controller
         $empleos = Empleo::all();
         return view('empleos.index',['empleos'=>$empleos]);
     }
+    
+    public function todos()
+    {
+        
+        
+        $empleos = Empleo::all();
+        return view('empleos.todos',['empleos'=>$empleos]);
+    }
 
     /**
      * Show the form for creating a new resource.
@@ -91,25 +99,45 @@ class EmpleosController extends Controller
      */
     public function show($id)
     {
-        $user = Empleo::where('id',$id)->first();
+        $usuario = Empleo::where('user_id',$id)->first();
     
-//        dd($user);
+//        dd($usuario);
         
         
-        if($user == null)
+        if($usuario == null)
       {
-        return "no tiene empleo";
+        return view('empleos.create');
       }
 
-        return "si tiene empleo";
-        
-        
-        
-        
-        return view('empleos.empleosshow',[
-          'user'=>$user,
+      return view('empleos.curriculum',[
+          'usuario'=>$usuario,
       ]);
         
+        
+        
+        
+//        return view('empleos.empleosshow',[
+//          'user'=>$user,
+//      ]);
+        
+        
+     
+    }
+    
+    
+    
+public function show2($id)
+    {
+        $usuario = User::where('id',$id)->first();
+    
+//        dd($usuario);
+     
+      return view('empleos.todosShow',[
+          'usuario'=>$usuario,
+      ]);
+        
+        
+      
         
      
     }

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Experiencia;
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Redirect;
@@ -70,7 +71,29 @@ class ExperienciasController extends Controller
      */
     public function show($id)
     {
-        //
+        
+       
+        
+        $user = User::where('id',$id)->first();
+    
+    
+        return view('empleos.experiencias',[
+          'user'=>$user,
+      ]);
+    }
+    
+    
+    public function show2($id)
+    {
+        
+       
+        
+        $user = User::where('id',$id)->first();
+    
+    
+        return view('empleos.experiencias2',[
+          'user'=>$user,
+      ]);
     }
 
     /**

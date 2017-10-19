@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Redirect;
 class HomeController extends Controller
 {
     /**
@@ -34,5 +34,11 @@ class HomeController extends Controller
     public function empresa2()
     {
         return view('homeEmpresa2');
+    }
+    
+    public function regresar()
+    {
+        return redirect()->back();
+         
     }
 }

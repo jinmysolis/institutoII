@@ -6,7 +6,14 @@
 <div class="home-container">
     
     
- @include('includes.menuLateral')    
+ @if (auth()->user()->tipoCuenta === 'personal') 
+           @include('includes.menuLateralPersona')  
+      @else
+        
+      @include('includes.menuLateral')  
+        
+        
+    @endif
     
     <div class="central">   
 <h1>aqui van las ofertas de las compañias que necesitan empleados</h1>
@@ -52,6 +59,7 @@
     <p>No hay mensajes destacados</p>
     @endforelse
    </div>  
+
     
 </div>
     @include('includes.banner')    

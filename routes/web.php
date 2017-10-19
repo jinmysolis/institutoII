@@ -14,11 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/regresar', 'HomeController@regresar');
 Route::resource('empresas', 'EmpresaController');
 Route::resource('usuarios', 'UserController');
 Route::resource('formaciones', 'FormacionesController');
-Route::resource('experienciaLaboral', 'ExperienciasController');
+Route::get('/showFormacion/{id}', 'FormacionesController@show2');
+Route::resource('experiencia', 'ExperienciasController');
+Route::get('/showExperiencia/{id}', 'ExperienciasController@show2');
 Route::resource('conocimientos', 'OtrosConocminetosController');
+Route::get('/showConocimientos/{id}', 'OtrosConocminetosController@show2');
 Route::get('empresas/empleos/{id}', 'EmpresaController@showEmpleos');
 Auth::routes();
 
@@ -27,6 +31,9 @@ Route::get('/homeEmpresa', 'HomeController@empresa');
 Route::get('/homeEmpresa2', 'HomeController@empresa2');
 Route::resource('publicarOferta', 'PublicarOfertaController');
 Route::resource('empleos', 'EmpleosController');
+Route::get('/todos', 'EmpleosController@todos');
+Route::get('/show2/{id}', 'EmpleosController@show2');
+
 Route::resource('referidos', 'ReferidosController');
 
 Route::resource('panel', 'PanelController');

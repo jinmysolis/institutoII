@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Conocimiento;
+use App\User;
 class OtrosConocminetosController extends Controller
 {
     /**
@@ -64,7 +65,23 @@ class OtrosConocminetosController extends Controller
      */
     public function show($id)
     {
-        //
+        $user = User::where('id',$id)->first();
+    
+    
+        return view('empleos.conocimientos',[
+          'user'=>$user,
+      ]);
+    }
+    
+    
+    public function show2($id)
+    {
+        $user = User::where('id',$id)->first();
+    
+    
+        return view('empleos.conocimientos2',[
+          'user'=>$user,
+      ]);
     }
 
     /**

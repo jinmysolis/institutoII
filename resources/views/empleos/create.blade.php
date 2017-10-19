@@ -12,17 +12,24 @@
        
         
   
-   @include('includes.menuLateral')  
+   @if (auth()->user()->tipoCuenta === 'personal') 
+           @include('includes.menuLateralPersona')  
+      @else
+        
+      @include('includes.menuLateral')  
+        
+        
+    @endif
         
         
       <div class="central">
-          <a href="{{ url('/empleos',Auth::user()->id) }}" class="btn btn-block btn-info">ia r aver </a>
+<!--          <a href="{{ url('/empleos',Auth::user()->id) }}" class="btn btn-block btn-info">ia r aver </a>-->
         
           
           
           
           
-<!--     <div class="formulario_create_empleo">
+     <div class="formulario_create_empleo">
           <br><br>
  
      {!!Form::open(['url'=>'/empleos','method'=>'POST'])!!}
@@ -506,7 +513,7 @@
  <center><button type="submit" class="btn btn-primary btn-lg">Registrar</button></center>
  </p>
      {!!Form::close()!!} 
-      </div>-->
+      </div>
    
 </div>
       

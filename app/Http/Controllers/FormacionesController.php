@@ -79,7 +79,23 @@ class FormacionesController extends Controller
      */
     public function show($id)
     {
-        //
+        $formacion = Formacion::where('id',$id)->first();
+    
+    
+        return view('empleos.formaciones',[
+          'formacion'=>$formacion,
+      ]);
+    }
+    
+    
+    public function show2($id)
+    {
+        $formacion = Formacion::where('id',$id)->first();
+    
+    
+        return view('empleos.formaciones2',[
+          'formacion'=>$formacion,
+      ]);
     }
 
     /**

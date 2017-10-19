@@ -1,12 +1,29 @@
 @extends('layouts.myapp4')
 
 @section('content')
+@include('includes.menuIconos') 
 
+<div class="home-container">
+     @if (auth()->user()->tipoCuenta === 'personal') 
+           @include('includes.menuLateralPersona')  
+      @else
+        
+      @include('includes.menuLateral')  
+        
+        
+    @endif
+       
+       <div class="central">
+            @include('includes.menuEmpleosCurriculum') 
 
-<!--    @include('includes.menuIconosEmpleo') -->
+          
+        
+       
+       
+          
+        </div> 
+       
+       @include('includes.banner')     
     
-   <div class="alert alert-success" role="alert">
-     Aqui se mostraran  los curriculum inscriptos
- </div>
-
+</div>
 @endsection

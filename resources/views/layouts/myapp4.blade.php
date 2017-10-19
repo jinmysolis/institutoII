@@ -31,7 +31,7 @@
    
 </head>
 <body>
-
+    
         <div class="header">
                 <div class="header-parte1">
                    <img src="{{ asset('img/banner_cabecera-01.png') }}" alt="" class="img-barnne" >
@@ -119,6 +119,7 @@
 
     
             <section>
+                <div class="total-heid">
                 @if( session('success'))       
  
      
@@ -128,7 +129,7 @@
                @endif
               
                 @yield('content')
-
+</div>
             </section>
 
    

@@ -3,7 +3,7 @@
           <div class="gente">
          <img src="img/profesional.jpg" alt="">
          </div>
-       <li @if(request()->is('panel'))class="active" @endif><a class="btn btn-lg btn-success text-left" href="{{ url('/empleos/create') }}">
+       <li @if(request()->is('panel'))class="active" @endif><a class="btn btn-lg btn-success text-left" href="{{ url('/empleos') }}">
                Subir Curriculum</a></li>
        <li @if(request()->is('panel'))class="active" @endif><a class="btn btn-lg btn-success text-left" href="{{ url('/panel') }}">
       Panel<img src="{{ asset('img/menu-lateral27.png') }}" alt="" ></a></li>

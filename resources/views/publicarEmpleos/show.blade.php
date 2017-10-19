@@ -35,6 +35,6 @@
 </div>
 <div class="text-center">       
    <a href="{{ url('/publicarOferta') }}"class="btn btn-success ">Regresar</a>
- </div>            
+</div>            
 
 @endsection

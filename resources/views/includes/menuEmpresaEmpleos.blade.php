@@ -11,7 +11,7 @@
            <img src="{{ asset('img/menuEmpresaHome2.png') }}" alt="" ></a><div >Mis vacantes</div></li>
             <li class="li-menu-homeEmpleo"><a class="btn btn-lg btn-success text-left" href="{{ url('/empresas/create') }}" id="btn-menuEmpleo">
                     <img src="{{ asset('img/menuEmpresaHome3.png') }}" alt="" ></a><div ><div class="text-center">Registrar empresa</div></div></li>
-           <li class="li-menu-homeEmpleo"><a class="btn btn-lg btn-success text-left" href="#" id="btn-menuEmpleo">
+           <li class="li-menu-homeEmpleo"><a class="btn btn-lg btn-success text-left" href="{{ url('/todos') }}"id="btn-menuEmpleo">
                    <img src="{{ asset('img/menuEmpresaHome4.png') }}" alt="" ></a><div ><div class="text-center">Buscar candidatos</div></div></li>
            <li class="li-menu-homeEmpleo"><a class="btn btn-lg btn-success text-left" href="{{ url('/empresas',Auth::user()->id) }}" id="btn-menuEmpleo">
            <img src="{{ asset('img/menuEmpresaHome5.png') }}" alt="" ></a><div >Cuenta</div></li>
