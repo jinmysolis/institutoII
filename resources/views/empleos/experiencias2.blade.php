@@ -30,7 +30,8 @@
     <a class="list-group-item color-text" href="#">&nbsp;DESCRIPCION DE PUESTO DE TRABAJO: <div class="text-center color-text">{{$experiencia->descripcion_puesto}}</div> </a>
     <a class="list-group-item color-text" href="#">&nbsp;DESDE:   <div class="text-center color-text">{{$experiencia->ano_inicio_trabajo}}</div> </a>
     <a class="list-group-item color-text" href="#">&nbsp;HASTA: <div class="text-center color-text">{{$experiencia->ano_fin_trabajo}}</div> </a>
-    
+    <h1 STYLE="font-size:18px; font-family:arial; color:#fff">Experiencia laboral</h1>
+    <hr>
     
      @endforeach
     
@@ -57,13 +58,4 @@
 </div>
 
 
-
-
-
- {{$user->name}}
-<h1>pagia donde van las experiencias</h1>
-@foreach($user->experiencias as $experiencia)
- <a class="list-group-item color-text" href="#"><i class="fa fa-university fa-fw fa-3x" aria-hidden="true"></i>&nbsp;INFORMACION:  <div class="text-center color-text">{{$experiencia->nombre_empresa}}</div> </a>
-
-@endforeach
 @endsection

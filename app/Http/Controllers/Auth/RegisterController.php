@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Auth;
-
+use Illuminate\Support\Facades\Mail;
 use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
@@ -55,6 +55,8 @@ class RegisterController extends Controller
             'email' => 'required|email|max:255|unique:users|confirmed',
             'password' => 'required|min:6',
         ]);
+        
+        
     }
 
     /**
@@ -65,14 +67,23 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        
+    
+            $user = User::create([
              'name' => $data['name'],
              'apellidos' => $data['apellidos'],
              'email' => $data['email'],
              'pais' => $data['pais'],
              'tipoCuenta' => $data['tipoCuenta'],
              'password' => bcrypt($data['password']),
+              
         ]);
+            
+         Mail::send('emails.contacto',['msg'=> $user],function($message)use($data){
+           $message->to('solisjinmy@gmail.com', $data['name'])->subject('tu mensaje recibido');
+       });
+        return $user;
+       
     }
     
     

@@ -8025,12 +8025,23 @@ button.close {
   margin-top: 20px;
   width: 200px;
   color: #006634;
-  border: 4px double #006634;
+  border: 4px solid #fff;
+  margin-right: 5px;
 }
 
 .card-img-top {
   width: 100%;
   background-size: contain;
+}
+
+.todas {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
 }
 
 * {

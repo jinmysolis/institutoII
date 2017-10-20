@@ -10,17 +10,16 @@
         
  <div class="home-container">
        
-        
-  
-   @@if (auth()->user()->tipoCuenta === 'personal') 
+   @if (auth()->user()->tipoCuenta === 'personal') 
            @include('includes.menuLateralPersona')  
       @else
         
       @include('includes.menuLateral')  
         
         
-    @endif
-        
+    @endif     
+  
+   
         
       <div class="central">
           
@@ -33,9 +32,7 @@
       {{ session('info') }}
      </div>
      
-    
-
-     @endif
+ @endif
           
  <div class="alert alert-success" role="alert">
       Otros conocimientos
@@ -90,11 +87,15 @@
                 
  
            <hr>
+         
            
-
-
-							                     
-									              
+ @if( session()->has('info'))       
+ 
+     <div class="alert alert-warning" role="alert">
+      {{ session('info') }}
+     </div>
+     
+ @endif								              
 							                 
 							               
      

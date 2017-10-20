@@ -29,7 +29,7 @@
     @if( session()->has('info'))       
  
      <div class="alert alert-warning" role="alert">
-      {{ session('info') }}
+    {{ session('info') }}
      </div>
      
     
@@ -48,8 +48,8 @@
                 </button>
           </div>
           </p>
-     {!!Form::open(['url'=>'/experienciaLaboral','method'=>'POST'])!!}
-      <form  role="form" method="POST" action="{{ url('/experienciaLaboral') }}">
+     {!!Form::open(['url'=>'/experiencia','method'=>'POST'])!!}
+      <form  role="form" method="POST" action="{{ url('/experiencia') }}">
            {{ csrf_field() }}
      
               
@@ -276,7 +276,15 @@
 							                     
 									              
 							                 
-							               
+@if( session()->has('info'))       
+ 
+     <div class="alert alert-warning" role="alert">
+    {{ session('info') }}
+     </div>
+     
+    
+
+     @endif							               
      
  
   

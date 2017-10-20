@@ -57,7 +57,7 @@ class ExperienciasController extends Controller
        
         if($experiencia->save()){
         
-          return redirect('experienciaLaboral/create')->with('info','Si desea agregar mas experiencia pulse registrar sino pulse siguiente');
+          return redirect('experiencia/create')->with('info','Si desea agregar mas experiencia pulse registrar sino pulse siguiente');
         }else{
             return view("empleos.create");
         }

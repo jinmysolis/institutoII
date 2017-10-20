@@ -305,7 +305,7 @@
  
   
      <p>
- <center><button type="submit" class="btn btn-primary btn-lg">Registrar</button></center>
+ <center><button type="submit" class="btn btn-primary btn-lg">Registrate</button></center>
  </p>
      {!!Form::close()!!} 
       </div>

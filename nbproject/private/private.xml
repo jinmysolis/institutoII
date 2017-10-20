@@ -13,14 +13,11 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/xampp/htdocs/instituto/routes/web.php</file>
-            <file>file:/C:/xampp/htdocs/instituto/resources/views/publicarEmpleos/index.blade.php</file>
-            <file>file:/C:/xampp/htdocs/instituto/app/Http/Controllers/EmpleosController.php</file>
-            <file>file:/C:/xampp/htdocs/instituto/resources/views/empleos/todosShow.blade.php</file>
-            <file>file:/C:/xampp/htdocs/instituto/resources/assets/sass/welcome.scss</file>
-            <file>file:/C:/xampp/htdocs/instituto/resources/views/includes/menuEmpresaEmpleos.blade.php</file>
-            <file>file:/C:/xampp/htdocs/instituto/resources/views/empleos/todos.blade.php</file>
-            <file>file:/C:/xampp/htdocs/instituto/resources/views/empleos/formaciones.blade.php</file>
-            <file>file:/C:/xampp/htdocs/instituto/app/User.php</file>
+            <file>file:/C:/xampp/htdocs/instituto/config/app.php</file>
+            <file>file:/C:/xampp/htdocs/instituto/app/Http/Controllers/Auth/RegisterController.php</file>
+            <file>file:/C:/xampp/htdocs/instituto/resources/views/emails/contacto.blade.php</file>
+            <file>file:/C:/xampp/htdocs/instituto/config/mail.php</file>
+            <file>file:/C:/xampp/htdocs/instituto/.env</file>
         </group>
     </open-files>
 </project-private>

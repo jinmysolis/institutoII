@@ -154,12 +154,21 @@
 .card{
     margin-top: 20px;
     width: 200px;
-   color:#006634;
-    border:4px double #006634;
+    color:#006634;
+    border:4px solid #fff;
+    margin-right: 5px;
+    
    
 }
 
 .card-img-top{
     width: 100%;
     background-size: contain;
+}
+
+.todas{
+ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
