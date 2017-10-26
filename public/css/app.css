@@ -7676,6 +7676,7 @@ button.close {
 }
 
 #accordion .card {
+  width: 100%;
   margin: 0;
 }
 
@@ -7888,6 +7889,32 @@ button.close {
 }
 
 /*////////////welcome///////////////////*/
+.contai {
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.row-contai {
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.row-contai-cont {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+
 /*///////////pagina wolcomer///////////*/
 .menu-icono-welcome {
   padding-top: 40px;
@@ -7930,6 +7957,23 @@ button.close {
   justify-content: center;
   -webkit-box-align: center;
   align-items: center;
+}
+
+.logo-wolcome {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.h-w {
+  color: #006634;
+}
+
+.f-w {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .mensaje2 {

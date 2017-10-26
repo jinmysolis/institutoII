@@ -1,5 +1,28 @@
 /*////////////welcome///////////////////*/
 
+
+.contai{
+
+    
+    justify-content: center;
+    align-items: center;
+}
+.row-contai{
+   
+    justify-content: center;
+    align-items: center;
+}
+
+.row-contai-cont{
+    
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
 /*///////////pagina wolcomer///////////*/
 
 .menu-icono-welcome{
@@ -47,6 +70,25 @@
     justify-content: center;
     align-items: center;
     
+}
+
+.logo-wolcome{
+    
+    width: 100%;
+    border: 1px solid black;
+    
+}
+
+.h-w{
+    color:#006634;
+}
+
+
+.f-w{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .mensaje2{

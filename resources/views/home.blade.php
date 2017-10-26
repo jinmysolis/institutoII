@@ -20,7 +20,7 @@
     @endif
      
         
-      <div class="central">
+     <div class="central">
           <div class="alert alert-success" role="alert">
              Bienvenidos a la section personal 
           </div> 

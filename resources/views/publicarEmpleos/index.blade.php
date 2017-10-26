@@ -1,6 +1,9 @@
 @extends('layouts.myapp4')
 
 @section('content')
+<div class="container-fluid">
+    <div class="row">
+        
 @include('includes.menuIconos') 
 
 <div class="home-container">
@@ -16,21 +19,26 @@
     @endif
     
     <div class="central">   
-<h1>aqui van las ofertas de las compañias que necesitan empleados</h1>
-
-  
-    <div class="row text-center" id="row-pempresa">
-    
-    @forelse($pempresa as $pempresa)
-      <div class="col-6">
-      <div class="text-center">
+   
+   
+   <h1>aqui van las ofertas de las compañias que necesitan empleados </h1>
+   @if( session()->has('info'))       
+    <div class="alert alert-success" role="alert">
+    {{ session('info') }}
+     </div>
+   @endif
+   
+   
+   @forelse($pempresa as $pempresa)
+     
+      
 
         
            
     <section class="cta img-thumbnail">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-9 col-sm-6 text-lg-left text-center">
+      <div class="contai">
+        <div class="row-contai">
+          <div class="row-contai-cont">
             <h2>
                <span class="span-pempresa">Se solicita: </span>  {{$pempresa->titulo_oferta}}
             </h2>
@@ -39,8 +47,12 @@
                 <span class="span-pempresa">Funciones: </span>{{$pempresa->tareas}}<br>
                 <span class="span-pempresa">Resposable: </span>{{$pempresa->user->name}}<br>
                 <span class="span-pempresa">Fecha: </span>{{$pempresa->created_at}}
-            </p>
+              </p>
+              
+              <div class="row-contai-cont-a">
             <a class="btn btn-ghost" href="{{ url('/publicarOferta',$pempresa->id) }}">Mas informacion</a>
+            <a class="btn btn-ghost" href="{{ url('/postular',$pempresa->user_id) }}">postularte</a>
+            </div>
           </div>
 
           
@@ -53,15 +65,17 @@
         <hr>
             
         
-      </div>
-      </div>
+     
+      
     @empty
     <p>No hay mensajes destacados</p>
     @endforelse
-   </div>  
-
     
-</div>
+   </div>
+    
+    
     @include('includes.banner')    
-</div>
+
+
+</div></div>
 @endsection

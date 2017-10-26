@@ -8,7 +8,7 @@
 <div class="central">
    
  <div class="alert alert-success" role="alert">
-        Todas las Empresas congeladass
+        Todas las Empresas creadas
     </div>
 <h1></h1>
 <div class="center">

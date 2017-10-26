@@ -17,7 +17,15 @@
             @include('includes.menuEmpleosCurriculum') 
 
            <div class="alert alert-success" role="alert">
-            <h1>Datos perosonales</h1>
+            <h1>Datos perosonales de: {{$usuario->user->name}} {{$usuario->user->apellidos}}</h1>
+            
+            
+            
+           
+            
+            
+            
+            
 <div class="list-group" id="list-group-showOfertas">
     <a class="list-group-item color-text" href="#">&nbsp;PROFESION:  <div class="text-center color-text">{{$usuario->profesion}}</div> </a>
     <a class="list-group-item color-text" href="#">&nbsp;SEGUNDO NOMBRE <div class="text-center color-text">{{$usuario->segundo_nombre}}</div></a>

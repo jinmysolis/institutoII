@@ -79,7 +79,9 @@ class FormacionesController extends Controller
      */
     public function show($id)
     {
-        $formacion = Formacion::where('id',$id)->first();
+        
+        
+        $formacion = Formacion::where('user_id',$id)->first();
     
     
         return view('empleos.formaciones',[
@@ -90,7 +92,7 @@ class FormacionesController extends Controller
     
     public function show2($id)
     {
-        $formacion = Formacion::where('id',$id)->first();
+        $formacion = Formacion::where('user_id',$id)->first();
     
     
         return view('empleos.formaciones2',[

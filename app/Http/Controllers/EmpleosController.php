@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Http\Requests\EmpleoCreateRequest;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use App\Empleo;
 use App\User;
 class EmpleosController extends Controller
@@ -12,9 +13,9 @@ class EmpleosController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-//    public function __construct() {
-//        $this->middleware('auth');
-//    }
+    public function __construct() {
+        $this->middleware('auth');
+    }
 
 
 
@@ -100,18 +101,25 @@ class EmpleosController extends Controller
     public function show($id)
     {
         $usuario = Empleo::where('user_id',$id)->first();
-    
-//        dd($usuario);
+        $ur= Auth::user()->id;
+//        dd($ur);
         
         
         if($usuario == null)
       {
         return view('empleos.create');
       }
+      
+      return view('empleos.curriculum')
+                        ->with('usuario',$usuario)
+                        ->with('ur',$ur)
+                      
+                        ;
+      
+      
+      
 
-      return view('empleos.curriculum',[
-          'usuario'=>$usuario,
-      ]);
+
         
         
         
@@ -130,7 +138,7 @@ public function show2($id)
     {
         $usuario = User::where('id',$id)->first();
     
-//        dd($usuario);
+//       dd($usuario);
      
       return view('empleos.todosShow',[
           'usuario'=>$usuario,

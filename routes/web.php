@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/regresar', 'HomeController@regresar');
+Route::get('/postular/{id}', 'PostularController@enviar');
+
 Route::resource('empresas', 'EmpresaController');
 Route::resource('usuarios', 'UserController');
 Route::resource('formaciones', 'FormacionesController');
